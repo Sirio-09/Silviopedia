@@ -1,0 +1,69 @@
+@import url(background.css);
+
+/* Contenitore principale della pagina */
+body {
+    /* Spazio esterno attorno al contenuto principale */
+    margin: 50px; 
+}
+
+/* Stile dell'Area Contenuto Principale */
+main {
+    font-size: 20px;
+    font-family: "katamari_king", sans-serif;
+    margin: 50px;
+    padding: 20px;
+
+}
+
+/* Container della Griglia (Ho usato .silviopedia, se usi .grid-container, usa solo quello) */
+.grid-container {
+    display: grid;
+    /* Ottimo uso di auto-fit per creare colonne responsive (min 300px) */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; /* Spazio tra le figure */
+    justify-items: center; /* Centra orizzontalmente gli elementi all'interno della cella */
+
+    /* CRUCIALE per l'Accordion: 
+       Assicura che l'altezza della riga si adatti al contenuto più alto 
+       (specialmente quando la descrizione si espande) */
+    align-items: start !important;
+}
+
+/* Stile per ogni figura (l'intera unità immagine + didascalia + accordion) */
+/* Stile per ogni figura (il contenitore) */
+figure {
+    margin: 0; 
+    padding: 0;
+    border: 1px solid #696969;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+    height: auto; 
+    min-height: unset;
+    pointer-events: auto; /* Assicura che la figura sia interattiva */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+/* Immagini all'interno di una figura (consolido i duplicati) */
+figure img {
+    width: 300px; /* Dimensione fissa dell'immagine */
+    height: 300px; /* Dimensione fissa dell'immagine */
+    display: block; /* Rimuove lo spazio bianco sotto le immagini (importante) */
+    
+    /* Stile bordi dalla regola 'main img', se volevi applicarli solo qui: */
+    border: black solid 2px;
+    margin: 1px;
+}
+
+/* Didascalia sotto l'immagine */
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px; /* Aggiunto un po' di padding per estetica */
+}
+
+/* Rimuovi la sottolineatura e mantieni il colore ereditato per i link */
+a{
+    text-decoration: none;
+    color: inherit;
+}

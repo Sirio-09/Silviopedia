@@ -1,0 +1,53 @@
+@import url(background.css);
+
+/* Contenitore principale della pagina */
+body {
+    margin: 50px;    
+}
+
+/* Stile dell'Area Contenuto Principale */
+main {
+    margin: 50px;
+    padding: 20px;
+    font-family: katamari_king, sans-serif;
+    font-size: 20px;
+}
+
+#image{
+    align-items: left;
+    border: white solid 1px;
+    margin: 20px;
+    width: 340px;
+    height: 540px;
+}
+
+.container {
+    display: flex;         
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;             
+    background-color: rgb(108, 183, 212);
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    font-size: 25px;
+    margin-top: -35px;
+    text-align: left;
+}
+
+.image img {
+
+    flex-basis: 30%;
+
+    max-width: 100%;       
+    height: auto;
+    display: block;        
+}
+
+h2 {
+    text-align: left;
+    font-size: 40px;
+}
