@@ -33,3 +33,22 @@ header {
 .font-family{
     font-family: katamari_king, sans-serif;
 }
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    color: #000000;
+    margin: -50px;
+}
+
+.footer-silviopedia {
+    font-family: "katamari_king", sans-serif;
+    background-color: #fff;
+
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #696969;
+    display: inline-block;
+    padding: 10px 20px;
+}

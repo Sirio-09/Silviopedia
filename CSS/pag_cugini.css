@@ -2,7 +2,8 @@
 
 /* Contenitore principale della pagina */
 body {
-    margin: 50px;    
+    margin: 50px;  
+    min-height: 100vh; /* Assicura che il body occupi almeno l'altezza della viewport */
 }
 
 /* Stile dell'Area Contenuto Principale */
@@ -11,7 +12,13 @@ main {
     padding: 20px;
     font-family: katamari_king, sans-serif;
     font-size: 20px;
+    display: flex; 
+    flex-direction: column; /* Questo è fondamentale per il centramento orizzontale del link */
+    min-height: 20vh; 
+    /* Aggiungiamo un reset per sicurezza se ci fossero margini esterni sul main */
+    box-sizing: border-box;
 }
+
 
 #image{
     align-items: left;
@@ -36,6 +43,7 @@ main {
     font-size: 25px;
     margin-top: -35px;
     text-align: left;
+    margin-right: -550px;
 }
 
 .image img {
@@ -50,4 +58,22 @@ main {
 h2 {
     text-align: left;
     font-size: 40px;
+}
+
+.back-link {
+    
+    margin-top: auto;
+    align-self: center; /* Spinge l'elemento verso il basso */
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 24px; /* Spazio dal fondo della pagina */
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+    text-align: center;
+    margin-right: 550px;
 }
