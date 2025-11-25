@@ -20,7 +20,7 @@ main {
     display: grid;
     /* Ottimo uso di auto-fit per creare colonne responsive (min 300px) */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px; /* Spazio tra le figure */
+    gap: 30px; /* Spazio tra le figure */
     justify-items: center; /* Centra orizzontalmente gli elementi all'interno della cella */
 
     /* CRUCIALE per l'Accordion: 
@@ -97,13 +97,4 @@ a{
 
 .btn:active {
     transform: scale(0.70);
-}
-
-.btn-secondary {
-    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-}
-
-.btn-secondary:hover {
-    box-shadow: 0 10px 30px rgba(52, 152, 219, 0.5);
 }
