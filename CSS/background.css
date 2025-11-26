@@ -6,9 +6,10 @@
 html {
     /* Assicurati che il percorso dell'immagine sia corretto */
     background-image: url(../image/background/montagna.jpg);
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     /* Rimuovi il bordo e il margin dal body e mettili qui,
        oppure lasciali sul body se vuoi che solo il contenuto interno sia bordato. */
 }
@@ -33,7 +34,6 @@ header {
 .font-family{
     font-family: katamari_king, sans-serif;
 }
-
 
 footer {
     text-align: center;
