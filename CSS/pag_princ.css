@@ -2,8 +2,9 @@
 
 /* Contenitore principale della pagina */
 body {
-    /* Spazio esterno attorno al contenuto principale */
-    margin: 50px; 
+    margin: 0px;  
+    min-height: 100vh
+
 }
 
 /* Stile dell'Area Contenuto Principale */
@@ -90,6 +91,7 @@ a{
 }
 
 .btn:hover {
+    transition-delay: 0.3s;
     transform: scale(1.1) translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     border-color: rgb(0, 0, 0);
