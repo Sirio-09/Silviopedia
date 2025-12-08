@@ -2,6 +2,11 @@
 /* 1. STILI DI BASE (HTML, BODY, MAIN)       */
 /* ========================================= */
 
+*{
+    font-family: myFont;
+}
+
+
 /* Impostazioni dello sfondo generale */
 html {
     /* Assicurati che il percorso dell'immagine sia corretto */
@@ -26,11 +31,6 @@ header {
     color: white;
 }
 
-
-.font-family{
-    font-family: katamari_king, sans-serif;
-}
-
 footer {
     text-align: center;
     padding: 20px;
@@ -40,11 +40,16 @@ footer {
 }
 
 .footer-silviopedia {
-    font-family: "katamari_king", sans-serif;
-    background-color: #fff;
+    background-color: rgb(108, 183, 212);
 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    border: 1px solid #696969;
+    border: 5px solid rgb(76, 135, 158);
+    border-radius: 10px;
     display: inline-block;
     padding: 10px 20px;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../Font/Katamari_King.ttf);
 }

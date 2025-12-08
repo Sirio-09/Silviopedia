@@ -10,7 +10,6 @@ body {
 /* Stile dell'Area Contenuto Principale */
 main {
     font-size: 20px;
-    font-family: "katamari_king", sans-serif;
     margin: 50px;
     padding: 20px;
 
@@ -48,8 +47,9 @@ figure img {
     display: block; /* Rimuove lo spazio bianco sotto le immagini (importante) */
     
     /* Stile bordi dalla regola 'main img', se volevi applicarli solo qui: */
-    border: black solid 2px;
+    border: rgb(76, 135, 158) solid 5px;
     margin: 1px;
+    
 
     border-radius: 20px;
     border-bottom-left-radius: 0px;
@@ -61,15 +61,15 @@ figcaption {
     text-align: center;
     font-weight: bold;
     padding: 5px; /* Aggiunto un po' di padding per estetica */
-    background-color: white;
+    background-color: rgb(108, 183, 212);
     color: black;
     border-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 
-    margin-top: -2px;
-
-    border: black solid 2px;
+    border-bottom: rgb(76, 135, 158) solid 5px;
+    border-right: rgb(76, 135, 158) solid 5px;
+    border-left: rgb(76, 135, 158) solid 5px;
 }
 
 /* Rimuovi la sottolineatura e mantieni il colore ereditato per i link */
@@ -81,7 +81,7 @@ a{
 /* === BUTTONS === */
 .btn {
     display: inline-block;
-    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    background: rgb(76, 135, 158);
     text-decoration: none;
     border-radius: 20px;
     font-weight: bold;
@@ -94,7 +94,6 @@ a{
     transition-delay: 0.3s;
     transform: scale(1.1) translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    border-color: rgb(0, 0, 0);
 }
 
 .btn:active {
