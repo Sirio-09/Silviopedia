@@ -12,6 +12,9 @@ main {
     font-size: 20px;
     margin: 50px;
     padding: 20px;
+    background-color: rgb(108, 183, 212, 0.8); /* Sfondo bianco semi-trasparente per leggibilità */
+    border: 10px outset rgb(76, 135, 158);
+    border-radius: 20px;
 
 }
 
@@ -87,15 +90,25 @@ a{
     font-weight: bold;
     cursor: pointer;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px rgba(36, 64, 77, 0.5);
 }
 
 .btn:hover {
-    transition-delay: 0.3s;
-    transform: scale(1.1) translateY(-3px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 20px rgba(36, 64, 77, 0.5);
+
+    figcaption {
+        color: rgb(38, 69, 82);
+    }
+
 }
 
+
+
 .btn:active {
-    transform: scale(0.70);
+    transform: scale(0.90);
+}
+
+#severo_sicuro_sigfrido figcaption {
+    font-size: 18px;
+    padding: 7px;
 }

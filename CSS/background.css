@@ -3,7 +3,7 @@
 /* ========================================= */
 
 *{
-    font-family: myFont;
+    font-family: myFont, sans-serif;
 }
 
 
@@ -22,13 +22,21 @@ header {
     padding: 5px;
     text-align: center;
     font-size: 60px; 
-    /* Assicurati che "katamari_king" sia stato correttamente importato! */
-    font-family: "katamari_king", sans-serif;
     
     background-image: url(../image/background/banner.png);
     background-position: center center;
     background-attachment: fixed;
-    color: white;
+    color: rgb(255, 255, 255);
+
+    margin-left: 40px;
+    margin-right: 40px;
+    border: rgb(76, 135, 158) outset 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 footer {
@@ -43,7 +51,7 @@ footer {
     background-color: rgb(108, 183, 212);
 
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    border: 5px solid rgb(76, 135, 158);
+    border: 5px outset rgb(76, 135, 158);
     border-radius: 10px;
     display: inline-block;
     padding: 10px 20px;
