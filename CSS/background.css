@@ -4,8 +4,9 @@
 
 *{
     font-family: myFont, sans-serif;
-}
 
+    
+}
 
 /* Impostazioni dello sfondo generale */
 html {
@@ -15,10 +16,23 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    max-width: 100%;
+    overflow-x: hidden;
+
+    width: 100%; /* O un valore in pixel fisso, es. 1200px */
+    max-width: 1900px; /* Imposta una larghezza massima per schermi molto grandi */
+    margin-left: auto;
+    margin-right: auto;
+    /* Oppure la sintassi abbreviata: */
+    margin: 0 auto;
+
 }
 
 /* Stile dell'Header */
 header {
+    
+
     padding: 5px;
     text-align: center;
     font-size: 60px; 
@@ -36,6 +50,7 @@ header {
 }
 
 header h1 {
+    display: block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 

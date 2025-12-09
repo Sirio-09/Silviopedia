@@ -18,6 +18,31 @@ main {
 
 }
 
+main h2 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: -10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+hr{
+    border: none;
+    border-top: 5px solid rgb(76, 135, 158);
+    border-radius: 2px;
+    margin-bottom: 40px;
+    width: 35%;
+}
+
+.divider {
+    border: none;
+    border-top: 5px solid rgb(51, 91, 107);
+    border-radius: 2px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 85%;
+}
+
 /* Container della Griglia (Ho usato .silviopedia, se usi .grid-container, usa solo quello) */
 .grid-container {
     display: grid;
